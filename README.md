@@ -1,5 +1,7 @@
 # Pixel Editor with Web Assembly (Rust and JavaScript)
 
+![Working example](/img/work.gif)
+
 ## Why Rust and Web Assembly?
 
 ## Functionality explained
