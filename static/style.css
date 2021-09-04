@@ -1,0 +1,16 @@
+.button {
+  background: #111;
+  color: #fff;
+  margin: 0.9em;
+  border: none;
+  padding: 0.5em 0em 0.5em 0em;
+  font-weight: 600;
+  font-size: 0.8em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.button .text {
+  display: inline-block;
+  min-width: 100px;
+}

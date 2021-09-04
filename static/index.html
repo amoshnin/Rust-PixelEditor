@@ -2,18 +2,25 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <title>My Rust + Webpack project!</title>
   </head>
   <body>
     <canvas id="main-canvas" width="501" height="501"></canvas>
-    <div>
-      <button id="red">Red</button>
-      <button id="green">Green</button>
-      <button id="purple">Purple</button>
+    <div style="margin-top: 3px">
+      <button class="button" id="red"><span class="text">Red</span></button>
+      <button class="button" id="green"><span class="text">Green</span></button>
+      <button class="button" id="purple">
+        <span class="text">Purple</span>
+      </button>
     </div>
     <div>
-      <button id="un-do">Un-do</button>
-      <button id="re-do">Re-do</button>
+      <button class="button" id="un-do">
+        <span class="text">Un-do</span>
+      </button>
+      <button class="button" id="re-do">
+        <span class="text">Re-do</span>
+      </button>
     </div>
     <script src="index.js"></script>
   </body>
