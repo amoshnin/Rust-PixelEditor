@@ -31,6 +31,6 @@ Rust and WebAssembly integrates with existing JavaScript tooling. It supports EC
 
 ## Resources used
 
-Wasm Bindgen Docs: https://rustwasm.github.io/docs/wasm-bindgen/
-Immutable Datastructures library: https://docs.rs/im/15.0.0/im/
-rust-webpack-template: https://github.com/rustwasm/rust-webpack-template
+- Wasm Bindgen Docs: https://rustwasm.github.io/docs/wasm-bindgen/
+- Immutable Datastructures library: https://docs.rs/im/15.0.0/im/
+- rust-webpack-template: https://github.com/rustwasm/rust-webpack-template
