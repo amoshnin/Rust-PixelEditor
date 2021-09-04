@@ -64,9 +64,15 @@ function setupCanvas(state) {
 
   canvas.addEventListener('click', coloring)
 
-  canvas.addEventListener('mousedown', () => (state.dragging = true))
+  canvas.addEventListener('mousedown', () => {
+    state.dragging = true
+    state.internal.start_undo_block()
+  })
 
-  canvas.addEventListener('mouseup', () => (state.dragging = false))
+  canvas.addEventListener('mouseup', () => {
+    state.dragging = false
+    state.internal.stop_undo_block()
+  })
 
   canvas.addEventListener('mousemove', () => {
     if (!state.dragging) return
