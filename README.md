@@ -2,8 +2,7 @@
 
 - In-browser pixel editor with undo & redo using Webassembly with languages: Rust & Javascript.
 - Rust-webpack-template kit was used for connecting JavaScript with Rust and the "im" immutable data structures library (Rust crate) to improve the storage of state in our re-do/un-do queue.
-
-**Author**: Artem Moshnin <br/>
+- **Author**: Artem Moshnin <br/>
 
 <p align="center">
 <img src="/img/work.gif" width="450" height="450"  />
