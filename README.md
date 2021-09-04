@@ -1,6 +1,6 @@
 # Pixel Editor with Web Assembly (Rust and JavaScript)
 
-![Working example](/img/work.gif)
+<img src="/img/work.gif" width="250" height="250"/>
 
 ## Why Rust and Web Assembly?
 
