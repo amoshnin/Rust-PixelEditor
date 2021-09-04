@@ -13,7 +13,7 @@ function draw(state) {
   context.strokeStyle = 'black'
   context.lineWidth = 1
 
-  const image = state.image
+  const image = state.internal.image()
   const width = image.width()
   const height = image.height()
 
@@ -58,8 +58,7 @@ function setupCanvas(state) {
     x = Math.floor(x / cellSize)
     y = Math.floor(y / cellSize)
 
-    const image = state.image
-    image.brush(x, y, state.currentColor)
+    state.internal.brush(x, y, state.currentColor)
     draw(state)
   }
 
@@ -83,13 +82,23 @@ function setupCanvas(state) {
   document
     .getElementById('purple')
     .addEventListener('click', () => (state.currentColor = colors.purple))
+
+  document.getElementById('un-do').addEventListener('click', () => {
+    state.internal.undo()
+    draw(state)
+  })
+
+  document.getElementById('re-do').addEventListener('click', () => {
+    state.internal.redo()
+    draw(state)
+  })
 }
 
 async function main() {
   const lib = await import('../pkg/index.js').catch(console.error)
-  const image = new lib.Image(10, 10)
+  const internal = new lib.InternalState(10, 10)
   const state = {
-    image,
+    internal,
     currentColor: [200, 255, 200],
     dragging: false,
   }
